@@ -5,6 +5,7 @@ public class jugadores extends persona {
 
     private String simbolo;
     private int fichas[][];
+    private int cantidadVictorias;
 
     public jugadores(String simbolo, String nombre) {
         super(nombre);
@@ -27,6 +28,11 @@ public class jugadores extends persona {
         this.fichas = fichas;
     }
 
+    public int getCantidadVictorias() {
+        return cantidadVictorias;
+    }
 
-
+    public void setCantidadVictorias(int cantidadVictorias) {
+        this.cantidadVictorias = cantidadVictorias;
+    }
 }
