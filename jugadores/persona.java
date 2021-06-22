@@ -8,6 +8,9 @@ public class persona {
         this.nombre = nombre;
     }
 
+    public persona() {
+    }
+
     public String getNombre() {
         return nombre;
     }

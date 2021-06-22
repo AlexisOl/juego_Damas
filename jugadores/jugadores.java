@@ -3,45 +3,57 @@ package juego_Damas.jugadores;
 public class jugadores extends persona {
 
 
-    private String simbolo;
-    private int fichas[][];
-    private int cantidadVictorias;
-    private int cantidadDerrotas;
+    private String nickname;
+    private int ficha;
+    private int victorias;
+    private int derrotas;
+    // Para ficha establezco true == blanca
+    // False == negra
 
-    public jugadores(String simbolo, String nombre) {
+
+// Constructor con nombre y nickname
+    public jugadores(String nombre, String nickname) {
         super(nombre);
-        this.simbolo = simbolo;
+        this.nickname=nickname;
+
     }
 
-    public String getSimbolo() {
-        return simbolo;
+// constructor con nombre, nickname y ficha
+
+
+    public int getFicha() {
+        return ficha;
     }
 
-    public void setSimbolo(String simbolo) {
-        this.simbolo = simbolo;
+    public void setFicha(int ficha) {
+        this.ficha = ficha;
     }
 
-    public int[][] getFichas() {
-        return fichas;
+    public jugadores() {
+
     }
 
-    public void setFichas(int[][] fichas) {
-        this.fichas = fichas;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
-    public int getCantidadVictorias() {
-        return cantidadVictorias;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setCantidadVictorias(int cantidadVictorias) {
-        this.cantidadVictorias = cantidadVictorias;
+    public int getVictorias() {
+        return victorias;
     }
 
-    public int getCantidadDerrotas() {
-        return cantidadDerrotas;
+    public void setVictorias(int victorias) {
+        this.victorias = victorias;
     }
 
-    public void setCantidadDerrotas(int cantidadDerrotas) {
-        this.cantidadDerrotas = cantidadDerrotas;
+    public int getDerrotas() {
+        return derrotas;
+    }
+
+    public void setDerrotas(int derrotas) {
+        this.derrotas = derrotas;
     }
 }

@@ -1,6 +1,8 @@
 package juego_Damas.jugadores;
-import java.util.Scanner;
+
 import juego_Damas.modelo.Tablero;
+
+import java.util.Scanner;
 
 public class arbitro extends persona {
     private jugadores jugador1;
@@ -48,12 +50,6 @@ public class arbitro extends persona {
         this.entrada = entrada;
     }
 
-    public void jugar() {
-        this.tablero.dibujarTablero(jugador1.getNombre(), jugador2.getNombre());
-        //do {
-            tablero.establecerFichas(jugador1.getSimbolo(), jugador2.getSimbolo());
-            tablero.mostrar();
 
-        //}
     }
-}
+
